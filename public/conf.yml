@@ -229,3 +229,22 @@ sections:
           https://business.facebook.com/latest/home?asset_id=106509938312403&nav_ref=pages_classic_isolated_section
         target: newtab
         id: 5_594_metabusiness
+  - name: Finance
+    icon: fas fa-piggy-bank
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Yahoo Finance
+        icon: fas fa-arrow-trend-up
+        url: https://finance.yahoo.com/portfolio/p_0/view/v2
+        target: newtab
+        id: 0_692_yahoofinance
+      - title: Interactive
+        icon: fas fa-arrow-trend-down
+        url: https://www.interactivebrokers.com/en/home.php
+        target: newtab
+        id: 1_692_interactive
