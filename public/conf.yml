@@ -130,7 +130,7 @@ sections:
         url: https://www.ebay.com/
         target: newtab
         id: 1_840_ebay
-  - name: NAS
+  - name: NAS PODCAST
     icon: fas fa-server
     displayData:
       sortBy: most-used
@@ -139,32 +139,51 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
+      - title: NAS
+        icon: fas fa-desktop
+        url: http://naspodcast.jokerlight.xyz
+        target: newtab
+        id: 0_784_nas
+      - title: Files
+        icon: fas fa-file
+        url: http://filespodcast.jokerlight.xyz
+        target: newtab
+        id: 1_784_files
+  - name: NAS INTERNAL
+    icon: fas fa-server
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: NAS
+        icon: fas fa-desktop
+        url: http://nas.jokerlight.xyz/
+        target: newtab
+        id: 0_863_nas
       - title: Files
         icon: fas fa-file
         url: http://files.jokerlight.xyz
         target: newtab
-        id: 0_226_files
+        id: 1_863_files
       - title: Video
         icon: fas fa-video
         url: http://video.jokerlight.xyz/
         target: newtab
-        id: 1_226_video
+        id: 2_863_video
       - title: Photo
         icon: fas fa-camera
         url: >-
           http://photos.jokerlight.xyz/?launchApp=SYNO.Foto.Sharing.AppInstance&app_name=SYNO.Foto.Sharing.AppInstance&action=external_login&folderId=1&alias=photo#/signin
         target: newtab
-        id: 2_226_photo
+        id: 3_863_photo
       - title: Audio
         icon: fas fa-speaker
         url: http://music.jokerlight.xyz/
         target: newtab
-        id: 3_226_audio
-      - title: NAS
-        icon: fas fa-desktop
-        url: http://nas.jokerlight.xyz/
-        target: newtab
-        id: 4_226_nas
+        id: 4_863_audio
   - name: Networking
     icon: fas fa-wifi
     displayData:
@@ -249,3 +268,51 @@ sections:
         url: https://www.interactivebrokers.com/en/home.php
         target: newtab
         id: 1_692_interactive
+  - name: INTERNAL INFRAESTRUCTURE
+    icon: fas fa-building
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Traefik
+        icon: fas fa-globe
+        url: http://traefik.jokerlight.xyz/
+        target: newtab
+        id: 0_1795_traefik
+      - title: Glances
+        icon: fab fa-watchman-monitoring
+        url: http://glances.jokerlight.xyz/
+        target: newtab
+        id: 1_1795_glances
+      - title: portainer
+        icon: fab fa-docker
+        url: http://portainer.jokerlight.xyz/
+        target: newtab
+        id: 2_1795_portainer
+      - title: Dozzle Logs
+        icon: fas fa-warehouse
+        url: http://logs.jokerlight.xyz:9999/
+        target: newtab
+        id: 3_1795_dozzlelogs
+  - name: INTERNAL SERVICES
+    icon: fas fa-building
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Manga
+        icon: fas fa-books
+        url: http://manga.jokerlight.xyz/
+        target: newtab
+        id: 0_1249_manga
+      - title: Files PI
+        icon: fas fa-floppy-disk
+        url: browser.jokerlight.xyz
+        target: newtab
+        id: 1_1249_files
