@@ -5,12 +5,10 @@ pageInfo:
     - title: GitHub
       path: https://github.com/faritvidal
       target: newtab
-  footerText: ''
 appConfig:
   theme: colorful
   layout: auto
   iconSize: small
-  language: en
 sections:
   - name: Browser
     icon: fas fa-globe
@@ -21,61 +19,84 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Gmail
+      - &ref_0
+        title: Gmail
         icon: fas fa-inbox
         url: https://mail.google.com/mail/ca
         target: newtab
         id: 0_740_gmail
-      - title: Outlook
+      - &ref_1
+        title: Outlook
         icon: fas fa-envelope
         url: https://outlook.live.com/mail/#/inbox
         target: newtab
         id: 1_740_outlook
-      - title: Translate
+      - &ref_2
+        title: Translate
         icon: fas fa-language
         url: https://translate.google.co.cr/?hl=es&tab=mT
         target: newtab
         id: 2_740_translate
-      - title: Maps
+      - &ref_3
+        title: Maps
         icon: fas fa-map
         url: https://www.google.co.cr/maps/
         target: newtab
         id: 3_740_maps
-      - title: Calendar
+      - &ref_4
+        title: Calendar
         icon: fas fa-calendar
         url: https://calendar.google.com/calendar/
         target: newtab
         id: 4_740_calendar
-      - title: Drive
+      - &ref_5
+        title: Drive
         icon: fab fa-google-drive
         url: https://drive.google.com/drive/my-drive
         target: newtab
         id: 5_740_drive
-      - title: Wallet
+      - &ref_6
+        title: Wallet
         icon: fas fa-wallet
         url: https://web.budgetbakers.com/dashboard
         target: newtab
         id: 6_740_wallet
-      - title: Udemy
+      - &ref_7
+        title: Udemy
         icon: fas fa-graduation-cap
         url: https://www.udemy.com/
         target: newtab
         id: 7_740_udemy
-      - title: BCR
+      - &ref_8
+        title: BCR
         icon: fas fa-landmark
         url: https://www.personas.bancobcr.com/plantilla/
         target: newtab
         id: 8_740_bcr
-      - title: BAC
+      - &ref_9
+        title: BAC
         icon: fas fa-city
         url: https://www1.sucursalelectronica.com/redir/showLogin.go
         target: newtab
         id: 9_740_bac
-      - title: BN
+      - &ref_10
+        title: BN
         icon: fas fa-piggy-bank
         url: https://www.bnonline.fi.cr/Login/
         target: newtab
         id: 10_740_bn
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+      - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
   - name: Social
     icon: fas fa-thumbs-up
     displayData:
@@ -85,26 +106,35 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Youtube
+      - &ref_11
+        title: Youtube
         icon: fab fa-youtube
         url: https://www.youtube.com/
         target: newtab
         id: 0_603_youtube
-      - title: Facebook
+      - &ref_12
+        title: Facebook
         icon: fab fa-facebook
         url: https://www.facebook.com/
         target: newtab
         id: 1_603_facebook
-      - title: Instagram
+      - &ref_13
+        title: Instagram
         icon: fab fa-instagram
         url: https://www.instagram.com/
         target: newtab
         id: 2_603_instagram
-      - title: Whastapp
+      - &ref_14
+        title: Whastapp
         icon: fab fa-whatsapp
         url: https://web.whatsapp.com/
         target: newtab
         id: 3_603_whastapp
+    filteredItems:
+      - *ref_11
+      - *ref_12
+      - *ref_13
+      - *ref_14
   - name: Shopping
     icon: fas fa-store
     displayData:
@@ -114,16 +144,21 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Amazon
+      - &ref_15
+        title: Amazon
         icon: fab fa-amazon
         url: https://www.amazon.com/
         target: newtab
         id: 0_840_amazon
-      - title: Ebay
+      - &ref_16
+        title: Ebay
         icon: fab fa-ebay
         url: https://www.ebay.com/
         target: newtab
         id: 1_840_ebay
+    filteredItems:
+      - *ref_15
+      - *ref_16
   - name: NAS PODCAST
     icon: fas fa-server
     displayData:
@@ -133,16 +168,21 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: NAS
+      - &ref_17
+        title: NAS
         icon: fas fa-desktop
         url: http://naspodcast.jokerlight.xyz
         target: newtab
         id: 0_784_nas
-      - title: Files
+      - &ref_18
+        title: Files
         icon: fas fa-file
         url: http://filespodcast.jokerlight.xyz
         target: newtab
         id: 1_784_files
+    filteredItems:
+      - *ref_17
+      - *ref_18
   - name: NAS INTERNAL
     icon: fas fa-server
     displayData:
@@ -152,32 +192,43 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: NAS
+      - &ref_19
+        title: NAS
         icon: fas fa-desktop
         url: http://nas.jokerlight.xyz/
         target: newtab
         id: 0_863_nas
-      - title: Files
+      - &ref_20
+        title: Files
         icon: fas fa-file
         url: http://files.jokerlight.xyz
         target: newtab
         id: 1_863_files
-      - title: Video
+      - &ref_21
+        title: Video
         icon: fas fa-video
         url: http://video.jokerlight.xyz/
         target: newtab
         id: 2_863_video
-      - title: Photo
+      - &ref_22
+        title: Photo
         icon: fas fa-camera
         url: >-
           http://photos.jokerlight.xyz/?launchApp=SYNO.Foto.Sharing.AppInstance&app_name=SYNO.Foto.Sharing.AppInstance&action=external_login&folderId=1&alias=photo#/signin
         target: newtab
         id: 3_863_photo
-      - title: Audio
+      - &ref_23
+        title: Audio
         icon: fas fa-speaker
         url: http://music.jokerlight.xyz/
         target: newtab
         id: 4_863_audio
+    filteredItems:
+      - *ref_19
+      - *ref_20
+      - *ref_21
+      - *ref_22
+      - *ref_23
   - name: Networking
     icon: fas fa-wifi
     displayData:
@@ -187,22 +238,29 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Router
+      - &ref_24
+        title: Router
         icon: fas fa-router
         url: https://router.jokerlight.xyz/
         target: newtab
         id: 0_1064_router
-      - title: Unifi
+      - &ref_25
+        title: Unifi
         icon: fas fa-wifi
         url: >-
           https://192.168.1.39:8443/manage/account/login?redirect=%2Fmanage%2Fsite%2Fdefault%2Fdashboard
         target: newtab
         id: 1_1064_unifi
-      - title: Modem
+      - &ref_26
+        title: Modem
         icon: fas fa-router
         url: http://192.168.15.1/
         target: newtab
         id: 2_1064_modem
+    filteredItems:
+      - *ref_24
+      - *ref_25
+      - *ref_26
   - name: 100% Geek
     icon: fas fa-podcast
     displayData:
@@ -212,42 +270,57 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Studio
+      - &ref_27
+        title: Studio
         icon: fab fa-youtube
         url: https://studio.youtube.com/channel/UCBQw3Ck5juaczQ20E3HuN-A
         target: newtab
         id: 0_594_studio
-      - title: Canal
+      - &ref_28
+        title: Canal
         icon: fab fa-youtube
         url: https://www.youtube.com/c/100GeekPodcast
         target: newtab
         id: 1_594_canal
-      - title: Tik Tok
+      - &ref_29
+        title: Tik Tok
         icon: fab fa-tiktok
         url: https://www.tiktok.com/@100geekpodcast
         target: newtab
         id: 2_594_tiktok
-      - title: Anchor
+      - &ref_30
+        title: Anchor
         icon: fas fa-anchor
         url: https://anchor.fm/login?return_to=%2Fdashboard%2Fanalytics
         target: newtab
         id: 3_594_anchor
-      - title: Instagram
+      - &ref_31
+        title: Instagram
         icon: fab fa-instagram
         url: https://www.instagram.com/100_geek/
         target: newtab
         id: 4_594_instagram
-      - title: Meta Business
+      - &ref_32
+        title: Meta Business
         icon: fas fa-meta
         url: >-
           https://business.facebook.com/latest/home?asset_id=106509938312403&nav_ref=pages_classic_isolated_section
         target: newtab
         id: 5_594_metabusiness
-      - title: Amazon Podcast
+      - &ref_33
+        title: Amazon Podcast
         icon: fab fa-audible
         url: https://podcasters.amazon.com/podcasts
         target: newtab
         id: 6_594_amazonpodcast
+    filteredItems:
+      - *ref_27
+      - *ref_28
+      - *ref_29
+      - *ref_30
+      - *ref_31
+      - *ref_32
+      - *ref_33
   - name: Finance
     icon: fas fa-piggy-bank
     displayData:
@@ -257,16 +330,21 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Yahoo Finance
+      - &ref_34
+        title: Yahoo Finance
         icon: fas fa-arrow-trend-up
         url: https://finance.yahoo.com/portfolio/p_0/view/v2
         target: newtab
         id: 0_692_yahoofinance
-      - title: Interactive
+      - &ref_35
+        title: Interactive
         icon: fas fa-arrow-trend-down
         url: https://www.interactivebrokers.com/en/home.php
         target: newtab
         id: 1_692_interactive
+    filteredItems:
+      - *ref_34
+      - *ref_35
   - name: INTERNAL INFRAESTRUCTURE
     icon: fas fa-building
     displayData:
@@ -276,31 +354,42 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Traefik
+      - &ref_36
+        title: Traefik
         icon: fas fa-globe
         url: http://traefik.jokerlight.xyz/
         target: newtab
         id: 0_1795_traefik
-      - title: Glances
+      - &ref_37
+        title: Glances
         icon: fab fa-watchman-monitoring
         url: http://glances.jokerlight.xyz/
         target: newtab
         id: 1_1795_glances
-      - title: portainer
+      - &ref_38
+        title: portainer
         icon: fab fa-docker
         url: http://portainer.jokerlight.xyz/
         target: newtab
         id: 2_1795_portainer
-      - title: Dozzle Logs
+      - &ref_39
+        title: Dozzle Logs
         icon: fas fa-warehouse
         url: https://logs.jokerlight.xyz/
         target: newtab
         id: 3_1795_dozzlelogs
-      - title: Dashboard
+      - &ref_40
+        title: Dashboard
         icon: fas fa-house
         url: https://dashboard.jokerlight.xyz/
         target: newtab
         id: 4_1795_dashboard
+    filteredItems:
+      - *ref_36
+      - *ref_37
+      - *ref_38
+      - *ref_39
+      - *ref_40
   - name: INTERNAL SERVICES
     icon: fas fa-building
     displayData:
@@ -310,13 +399,25 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: Manga
+      - &ref_41
+        title: Manga
         icon: fas fa-books
         url: http://manga.jokerlight.xyz/
         target: newtab
         id: 0_1249_manga
-      - title: Files PI
+      - &ref_42
+        title: Files PI
         icon: fas fa-file
         url: https://browser.jokerlight.xyz/filebrowser/login?redirect=/files/
         target: newtab
         id: 1_1249_filespi
+      - &ref_43
+        title: Plex
+        icon: fas fa-screencast
+        url: https://plex.jokerlight.xyz/web/index.html#!/
+        target: newtab
+        id: 2_1249_plex
+    filteredItems:
+      - *ref_41
+      - *ref_42
+      - *ref_43
