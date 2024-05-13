@@ -414,7 +414,7 @@ sections:
       - &ref_43
         title: Plex
         icon: fas fa-screencast
-        url: https://plex.jokerlight.xyz/web/index.html#!/
+        url: http://plex.jokerlight.xyz/web/index.html#!/
         target: newtab
         id: 2_1249_plex
     filteredItems:
